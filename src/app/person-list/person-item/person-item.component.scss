@@ -1,0 +1,40 @@
+.item {
+  border-radius: 3px;
+  overflow: hidden;
+  width: fit-content;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: margin ease-in .2s;
+
+  &:hover {
+    box-shadow: 0 3px 1px -1px rgb(0 0 0 / 20%), 0 2px 2px 1px rgb(0 0 0 / 14%),
+      0 1px 5px 1px rgb(0 0 0 / 12%);
+  }
+}
+
+img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.name {
+  padding: 16px;
+  display: flex;
+  div {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .item {
+    width: 100%;
+    display: flex;
+    margin-bottom: 0;
+  }
+}

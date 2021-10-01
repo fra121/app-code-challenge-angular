@@ -1,0 +1,18 @@
+<div class="person-list"
+     fxLayout.gt-xs="row wrap"
+     fxLayout="column"
+     fxLayoutGap="16px"
+     fxLayoutAlign="center">
+
+  <app-person-item *ngFor="let person of personList"
+                   [person]="person"></app-person-item>
+
+  <div class="error-message"
+       *ngIf="errorMessage">
+    {{errorMessage}}
+  </div>
+
+  <div *ngIf="loading">
+    <img src="assets/spinner.svg">
+  </div>
+</div>

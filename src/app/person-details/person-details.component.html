@@ -1,0 +1,32 @@
+<a routerLink="/">
+  <img src="assets/arrow_back.svg"
+       class="back-icon" />
+</a>
+
+<div *ngIf="!loading"
+     fxLayoutAlign="center">
+  <div class="details-container">
+    <img [src]="person.picture.large"
+         alt="Profile"
+         class="profile-photo shadow" />
+    <h2>{{person.name.title}} {{person.name.first}} {{person.name.last}}</h2>
+    <div>{{formatedDate}}</div>
+    <div>{{person.location.street.name}} {{person.location.street.number}},
+      {{person.location.city}}, {{person.location.state}},
+      {{person.location.country}}
+    </div>
+    <div>{{person.email}}</div>
+    <div>{{person.phone}}</div>
+  </div>
+</div>
+
+<div fxLayoutAlign="center">
+  <div class="error-message"
+       *ngIf="errorMessage">
+    {{errorMessage}}
+  </div>
+
+  <div *ngIf="loading">
+    <img src="assets/spinner.svg">
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="item shadow"
+     fxLayout.lt-sm="row"
+     (click)="goToDetails()">
+  <img [src]="person.picture.large" />
+  <div fxLayoutGap.lt-sm="16px"
+       fxLayoutGap="8px"
+       fxLayout.lt-sm="column"
+       fxLayoutAlign.lt-sm="center"
+       class="name">
+    <div>{{ person.name.title }} {{ person.name.first }}</div>
+    <div>{{ person.name.last }}</div>
+  </div>
+</div>

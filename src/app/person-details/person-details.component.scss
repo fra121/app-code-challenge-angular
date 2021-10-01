@@ -1,0 +1,30 @@
+.back-icon {
+  cursor: pointer;
+  margin-bottom: 32px;
+}
+
+.details-container {
+  background: rgb(236, 236, 236);
+  background: linear-gradient(
+    180deg,
+    rgba(236, 236, 236, 1) 0%,
+    rgba(236, 236, 236, 0) 100%
+  );
+  padding: 24px;
+
+  div:not(:last-of-type) {
+    margin-bottom: 8px;
+  }
+}
+
+.profile-photo {
+  transform: translateY(-48px);
+  margin-bottom: -40px;
+  width: 136px;
+  height: 160px;
+  object-fit: cover;
+}
+
+h2 {
+  margin-bottom: 8px;
+}

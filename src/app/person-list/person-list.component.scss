@@ -1,0 +1,14 @@
+.error-message {
+  width: 240px;
+  padding: 8px 16px;
+  border: 1px solid red;
+  border-radius: 3px;
+  text-align: center;
+}
+
+
+@media (max-width: 960px) {
+  .error-message {
+    width: calc(100% - 32px);
+  }
+}
